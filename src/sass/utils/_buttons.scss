@@ -1,9 +1,71 @@
 .button {
+    display: inline-block;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    background-color: transparent;
-    color: getColor(button-text);
-    border-radius: 8px;
-    padding: 11px 26px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    border-style: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: getColor(yellow-main);
+    border-radius: 10px;
+
+    &.button__read-more {
+        padding-right: 34px;
+    }
+
+    &.button__our-location {
+        padding-left: 39px;
+        padding-right: 40px;
+    }
+
+    &.button__franchise {
+        padding-left: 55px;
+        padding-right: 54px;
+        background-color: transparent;
+        border: 2px solid getColor(yellow-main);
+
+        &.button__franchise:hover, &.button__franchise:focus {
+            background-color: inherit;
+            border: 2px solid getColor(button-hover-border);
+        }
+
+        &.button__franchise:disabled {
+            border: 2px solid getColor(button-disable-background);
+        }
+
+    }
+    
+
+    &.--button-arrow {
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover, &:focus {
+        background-color: getColor(button-hover-background);
+    }
+
+    &:focus {
+        color: getColor(theme-white);
+    }
+
+    &:disabled {
+        background-color: getColor(button-disable-background);
+    }
+    
+}
+
+.button__icon {
+    margin-left: 4px;
+    fill: currentColor;
+
+    .button:hover &, .button:focus & {
+        fill: currentColor;
+    }
+
+    .button:disabled & {
+        fill: currentColor;
+    }
 }
