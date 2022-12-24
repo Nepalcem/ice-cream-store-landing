@@ -11,6 +11,19 @@
     background: getColor(yellow-main);
     border-radius: 10px;
 
+    &.button_products {
+        font-style: 12px;
+        line-height: calc(15 / 12);
+        border-radius: 8px;
+        padding: 11px 26px;
+
+        @media screen and (min-width: $desktop) {
+            border-radius: 10px;
+            padding: 12px 34px;
+        }
+
+    }
+    
     &.button__read-more {
         padding-right: 34px;
     }
