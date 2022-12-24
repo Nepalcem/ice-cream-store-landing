@@ -11,6 +11,7 @@ $colors: (
   'orange-main': #d6936d,
   'orange-transparent': rgba(213, 117, 63, 0.7),
   'green-light': #AEC6A5,
+  'button-text': #000000
 );
 
 @function getColor($key) {
