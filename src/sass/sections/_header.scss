@@ -27,8 +27,9 @@ display: none;
 color:#131313;
 }
 .header__menu-container {
-    width: 320px;
-   height: 568px;
+    align-items: center;
+// text-align: center;
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -40,7 +41,7 @@ color:#131313;
   background-color: #fff;
   z-index: 999;
  background-color:#84A278;
-  transform: translateX(100%);
+  transform: translateX(95%);
   transition: transform 250ms ease-in-out;
 }
 
@@ -49,12 +50,12 @@ color:#131313;
 }
 
 .mobile-menu_link {
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
 line-height: 39px;
-padding-top: 32px;
+padding: 32px;
+padding-left: 32px;
 display: flex;
 align-items: center;
 text-align: center;
@@ -70,6 +71,7 @@ color: #FCFCFC;
 .logo__menu{
 position: absolute; 
 top: 10;
+left: 20px;
 
 
 }
