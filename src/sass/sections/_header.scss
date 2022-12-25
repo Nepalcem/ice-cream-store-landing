@@ -67,13 +67,38 @@ color: #FCFCFC;
 
 .header__logo {
     display: flex;
-    
+    margin-left: 20px;
 }
 .logo__menu{
 position: absolute; 
 top: 10;
 left: 35px;
-
-
-
+}
+.desktop-menu_link {
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+color: #FCFCFC;
+}
+.desktop-menu_item{
+  margin-left: 28px;
+}
+.desktop-menu {
+display: flex;
+margin-left: 309px;
+margin-top: 40px;
+@media screen and (min-width: $mobile) {
+    display: none;
+  }
+ @media screen and (min-width: $tablet) {
+  display: none;
+}
+@media screen and (min-width: $desktop) {
+    display: flex;
+margin-left: 309px;
+margin-top: 40px;
+  }
 }
