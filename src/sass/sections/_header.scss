@@ -1,6 +1,6 @@
-header{
-background-color:#84A278;
- padding-top: 12px;
+header {
+  background-color: #84a278;
+  padding-top: 12px;
   padding-bottom: 12px;
 }
 .header__menu {
@@ -8,29 +8,28 @@ background-color:#84A278;
   justify-content: center;
 
   padding: 0;
-  fill:#FFFFFF;
+  fill: #ffffff;
   background-color: transparent;
-  
+
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
 
   margin-left: auto;
- 
- @media screen and (min-width: $desktop) {
-display: none;
-}
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .mobile-menu_link:hover,
 .mobile-menu_link:focus {
-color:#131313;
+  color: #131313;
 }
 .header__menu-container {
-    align-items: center;
+  align-items: center;
 
- 
   position: fixed;
   top: 0;
   left: 0;
@@ -41,7 +40,7 @@ color:#131313;
   padding: 32px;
   background-color: #fff;
   z-index: 999;
- background-color:#84A278;
+  background-color: #84a278;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -51,54 +50,57 @@ color:#131313;
 }
 
 .mobile-menu_link {
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 39px;
-padding: 32px;
-padding-left: 32px;
-display: flex;
-align-items: center;
-text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  padding: 32px;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-color: #FCFCFC;
-
+  color: #fcfcfc;
 }
 
 .header__logo {
-    display: flex;
-    margin-left: 20px;
+  display: flex;
+  margin-left: 20px;
 }
-.logo__menu{
-position: absolute; 
-top: 10;
-left: 35px;
+.logo__menu {
+  position: absolute;
+  top: 10;
+  left: 35px;
 }
 .desktop-menu_link {
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-color: #FCFCFC;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #fcfcfc;
 }
-.desktop-menu_item{
+.desktop-menu_item {
   margin-left: 28px;
 }
 .desktop-menu {
-display: flex;
-margin-left: 309px;
-margin-top: 40px;
-@media screen and (min-width: $mobile) {
+  display: flex;
+  margin-left: 309px;
+  margin-top: 40px;
+  @media screen and (min-width: $mobile) {
     display: none;
   }
- @media screen and (min-width: $tablet) {
-  display: none;
-}
-@media screen and (min-width: $desktop) {
-    display: flex;
-margin-left: 309px;
-margin-top: 40px;
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: 309px;
+    margin-top: 40px;
+  }
+}
+.desktop-menu_link:hover,
+.mdesktop-menu_link:focus {
+  color: #f8d24e;
 }
