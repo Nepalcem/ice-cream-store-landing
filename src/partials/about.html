@@ -1,0 +1,73 @@
+<!-- about -->
+
+<section class="about">
+  <div class="container">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="block">
+      <div class="thumb">
+        <img
+          class="thumb__imagen"
+          srcset="
+            ./images/about/img1-279.jpg 279w,
+            ./images/about/img1-330.jpg 330w,
+            ./images/about/img1-490.jpg 490w,
+            ./images/about/img1-558.jpg 558w,
+            ./images/about/img1-660.jpg 660w,
+            ./images/about/img1-980.jpg 980w
+          "
+          sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, (min-width: 320px) 279px, 100vw"
+          src="./images/about/img1-279.jpg"
+          alt="cow"
+          loading="lazy"
+        />
+      </div>
+      <div class="description">
+        <p class="description__text description__text--first">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="description__text description__text--second">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <p class="description__text description__text--third">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <button class="about-button" type="button" data-modal-open>
+          Read more
+          <svg class="about-button__icon" width="12" height="12">
+            <use href="./images/icons.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- hidden title -->
+    <div class="advantages">
+      <h2 class="advantages__title visually-hidden">Advantages</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--cow">
+          <p class="advantages__index">721</p>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </li>
+        <li class="advantages__item advantages__item--weight">
+          <p class="advantages__index">16kg</p>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </li>
+        <li class="advantages__item advantages__item--ice-crema">
+          <p class="advantages__index">84</p>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

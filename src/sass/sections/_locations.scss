@@ -5,9 +5,8 @@
     padding: 0;
 
 &__block{
-    margin: 0 ;
+    margin: 0 auto;
     padding: 0;
-
 
 @media screen and (min-width: $tablet) {
     display: flex;
@@ -24,34 +23,37 @@
 }}
 
 .location__item{
-max-width: 368px;
-margin: 0;
+width: 280px;
+margin: 0 auto;
 margin-bottom: 16px;
 padding-left: 32px;
-
-padding-top: 32px;
-padding-bottom: 32px;
+padding-right: 32px;
+padding-top: 40px;
+padding-bottom: 24px;
 
 box-shadow: 0px 8px 30px rgba(47, 45, 46, 0.1);
 border-radius: 24px;
 background-color: #FFFFFF;
 cursor: pointer;
 
-&:last-child{margin-bottom: 20px;}
+@media screen and (max-width: $tablet) {&:last-child{margin-bottom: 20px;}}
 
 @media screen and (min-width: $tablet)
     {width: 224px;
     padding-top: 40px;
     padding-bottom: 40px;
-    // padding-right: 27px;
-    padding-left: 24px;}
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 40px;
+
+}
 
 @media screen and (min-width: $desktop) 
-    {width: 386px;
+    {width: 368px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-right: 40px;
     padding-left: 40px;
+    padding-right: 40px;
     
     // flex-basis: calc((100% - 32px) / 3);
 
@@ -59,26 +61,27 @@ cursor: pointer;
 
 .location-nav{
 
-    max-width: 288px;
+    max-width: 216px;
     padding-bottom:24px;
-
     border-bottom: 1px solid #E1E1E1;
 
     margin: 0;
     margin-top: 20px;
-    
-@media screen and (min-width: $tablet) and (max-width: $desktop)
+
+@media screen and (min-width: $tablet)
     {margin-top: 32px;
     padding-bottom: 32px;
-    max-width: 176px;}
+    max-width: 176px;
+padding-right: 24px;}
 
 @media screen and (min-width: $desktop) {
+    max-width: 288px;
 
 }
  
 
 &__type {
-    font-style: normal;
+    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 12px;
     line-height: 1.8;
@@ -175,4 +178,3 @@ padding-bottom: 8px;
     min-width:80px;
 }
 
-// .location-nav__adress{width: 158px;}
