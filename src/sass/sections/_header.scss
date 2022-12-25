@@ -15,6 +15,7 @@ background-color:#84A278;
   border: none;
   border-radius: 50%;
   outline: none;
+
   margin-left: auto;
  
  @media screen and (min-width: $desktop) {
@@ -28,8 +29,8 @@ color:#131313;
 }
 .header__menu-container {
     align-items: center;
-// text-align: center;
-  
+
+ 
   position: fixed;
   top: 0;
   left: 0;
@@ -41,7 +42,7 @@ color:#131313;
   background-color: #fff;
   z-index: 999;
  background-color:#84A278;
-  transform: translateX(95%);
+  transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
@@ -71,7 +72,8 @@ color: #FCFCFC;
 .logo__menu{
 position: absolute; 
 top: 10;
-left: 20px;
+left: 35px;
+
 
 
 }
