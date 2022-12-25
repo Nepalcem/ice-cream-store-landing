@@ -248,6 +248,19 @@
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .advantages {
   display: block;
   margin: 0 auto;
@@ -277,12 +290,10 @@
 
     @media screen and (min-width: $tablet) {
       width: 152px;
-      // width: calc((100% - 6 * 40px) / 3);
     }
 
     @media screen and (min-width: $desktop) {
       width: 368px;
-      // width: calc((100% - 6 * 16px) / 3);
     }
 
     &:not(:last-child) {
