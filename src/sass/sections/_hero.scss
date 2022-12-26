@@ -1,11 +1,13 @@
 .hero {
-  height: 600px;
+  // height: 600px;
   background-color: getColor('green-main');
-  padding: 14px 32px;
+  // padding: 14px 32px;
 
   & .container {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    // outline: 2px solid black;
+    // padding-top: 40px;
+    // padding-bottom: 60px;
+    padding: 50px 0px 0px 0px;
   }
   &__title {
     font-family: 'Seymour One';
@@ -13,30 +15,44 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 1.27;
-    color: getColor('theme-white');
+    letter-spacing: 0.04em;
+    // color: getColor('theme-white');
     width: 247px;
     /*position: absolute;
         width: 247px;
         height: 97px;*/
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  }
-  &__button {
-    position: absolute;
-    bottom: 0;
-    transform: translateX(-50%);
-    display: block;
-    width: 40px;
-    height: 16px;
-    border: none;
-    background: transparent;
-    margin-top: auto;
+    margin-left: 20px;
 
-    @media screen and (min-width: $desktop) {
-      bottom: 60px;
+    &--big {
+      font-family: 'Seymour One';
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      font-size: 34px;
+      line-height: 0.965;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-left: 20px;
     }
   }
-}
+  // &__button {
+  //   position: absolute;
+  //   bottom: 0;
+  //   transform: translateX(-50%);
+  //   display: block;
+  //   width: 40px;
+  //   height: 16px;
+  //   border: none;
+  //   background: transparent;
+  //   margin-top: auto;
+
+  //   @media screen and (min-width: $desktop) {
+  //     bottom: 60px;
+  //   }
+  // }
+
 
 /*&__block {
     &__item{
@@ -73,7 +89,51 @@
         }
     }*/
 
-.hero__card {
+&__nav {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: calc(186px + 100vw*217/320 - 217px);
+  margin-left: 20px;
+
+  &--first {
+    margin-right: 12px;
+  }
+}
+
+&__dots {
+  width: 100%;
+  height: calc(480px*50/320);
+
+  @media screen and (max-width: $mobile) {
+      height: calc(100vw*50/320);
+    }
+
+  
+}
+
+&__cream {
+  position: relative;
+  height: 0;
+  // margin-left: 83px;
+  // background-image: url(../src/images/icons.svg#dots_mob);
+
+  &--inner {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    
+
+    @media screen and (max-width: $mobile) {
+        height: calc(100vw*217/320);
+      }
+  }
+
+}
+
+
+
+&__card {
   position: absolute;
   width: 456px;
   height: 560px;
@@ -81,10 +141,11 @@
   top: 104px;
 }
 
-.hero__card1 {
+&__card1 {
   position: absolute;
   width: 225px;
   height: 225px;
   left: 16px;
   top: 374px;
+}
 }

@@ -1,14 +1,15 @@
 <section class="hero">
-    <div class="container">
-        <h1 class="hero__title">ice cream made with passion</h1>
-        <!--<ul class="hero__block">
+  <div class="container">
+    <h1 class="hero__title">ice cream made with</h1>
+    <span class="hero__title--big">passion</span>
+    <!--<ul class="hero__block">
             <li class="hero__item"><p class="hero__numb">16</p></li>
             <li class="hero__item"><p class="hero__text">cafes</p></li>
             <li class="hero__item"><p class="hero__numb">23</p></li>
             <li class="hero__item"><p class="hero__text">food trucks</p></li>
          </ul>-->
-         <div class="">
-            <ul class="hero__thumb">
+    <div class="">
+      <!-- <ul class="hero__thumb">
                 <li class="hero__item">
                     <div class="hero__box-1">
                         <svg class="hero__icons" width="32" height="34">
@@ -25,26 +26,40 @@
                         <p class="hero__text">food trucks</p>
                     </div>
                 </li>
-            </ul>
-            </div> 
-        <ul class="hero__nav">
-            <li class="hero__nav1">
-                <button class="hero__btn" type="button"></button>
-                <a class="hero__link" href="#products">Products</a>
-            </li>
-            <li class="hero__nav2">
-                <button class="hero__btn" type="button"></button>
-                <a class="hero__link" href="#about">How it’s made?</a>
-            </li>
-        </ul>
-           
-            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <button class="hero__button" type="button">
-                <svg height="16" width="40">
-                  <use href="./images/icons.svg#arrow"></use>
-                </svg>
-            </button>
-        
-
+            </ul> -->
     </div>
+    <ul class="hero__nav">
+      <li class="hero__nav--first">
+        <a class="button button_products --button-transperent" href="#products"
+          >Products</a
+        >
+      </li>
+      <li class="hero__nav--second">
+        <a class="link_button" href="">How it’s made?</a>
+      </li>
+    </ul>
+
+    <svg class="hero__dots">
+      <use href="./images/icons.svg#dots_mob"></use>
+    </svg>
+    <div class="hero__cream">
+      <img
+        class="hero__cream--inner"
+        srcset="/src/images/hero/waffel-mobile.png  177w,
+                /src/images/hero/waffel-mobile@2x.png  354w"
+                sizes="50vw"
+        src="/src/images/hero/waffel-mobile.png"
+        alt="icecream"
+      />
+    </div>
+    <!-- <p class="hero__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
+    <button class="hero__button" type="button">
+      <svg height="16" width="40">
+        <use href="./images/icons.svg#arrow"></use>
+      </svg>
+    </button> -->
+  </div>
 </section>
