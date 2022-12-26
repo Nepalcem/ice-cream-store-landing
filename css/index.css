@@ -188,18 +188,21 @@ header {
 }
 
 .menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  fill: #ffffff;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
   margin-left: auto;
+  fill: #fff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.99px) {
   .menu-toggle {
     display: none;
   }
@@ -208,6 +211,7 @@ header {
 .mobile-menu_link:hover,
 .mobile-menu_link:focus {
   color: #131313;
+  transition: color 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container {
@@ -236,16 +240,23 @@ header {
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
-  padding: 32px;
-  padding-left: 32px;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   color: #fcfcfc;
+  padding-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu_link {
+    font-size: 48px;
+    line-height: 59px;
+  }
 }
 
 .logo {
-  margin-right: 20px;
+  margin-right: auto;
   padding: 0px;
 }
 
@@ -273,17 +284,7 @@ header {
   margin-left: 28px;
 }
 
-.desktop-menu {
-  display: flex;
-  margin-left: 309px;
-  margin-top: 40px;
-}
-@media screen and (min-width: 480px) {
-  .desktop-menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199.98px) {
   .desktop-menu {
     display: none;
   }
@@ -299,6 +300,7 @@ header {
 .desktop-menu_link:hover,
 .mdesktop-menu_link:focus {
   color: #f8d24e;
+  transition: color 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
