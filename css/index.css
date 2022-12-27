@@ -137,10 +137,10 @@ img {
 }
 .button.button_products.button_products:hover, .button.button_products.button_products:focus {
   background-color: inherit;
-  border: 2px solid #0A8817;
+  border: 2px solid #0a8817;
 }
 .button.button_products.button_products:disabled {
-  border: 2px solid #ABABAB;
+  border: 2px solid #ababab;
 }
 .button.button__read-more {
   padding-right: 34px;
@@ -155,10 +155,10 @@ img {
 }
 .button.button__franchise.button__franchise:hover, .button.button__franchise.button__franchise:focus {
   background-color: inherit;
-  border: 2px solid #0A8817;
+  border: 2px solid #0a8817;
 }
 .button.button__franchise.button__franchise:disabled {
-  border: 2px solid #ABABAB;
+  border: 2px solid #ababab;
 }
 .button.button__submit {
   padding-left: 34px;
@@ -181,13 +181,13 @@ img {
   align-items: center;
 }
 .button:hover, .button:focus {
-  background-color: #0A8817;
+  background-color: #0a8817;
 }
 .button:focus {
   color: #fcfcfc;
 }
 .button:disabled {
-  background-color: #ABABAB;
+  background-color: #ababab;
 }
 
 .button__icon {
@@ -210,13 +210,13 @@ img {
   color: #f8d24e;
 }
 .link_button:hover {
-  color: #0A8817;
+  color: #0a8817;
 }
 .link_button:focus {
   color: #fcfcfc;
 }
 .link_button:disabled {
-  color: #ABABAB;
+  color: #ababab;
 }
 @media screen and (min-width: 1200px) {
   .link_button {
@@ -344,42 +344,13 @@ header {
 
 .hero {
   background-color: #84a178;
-  /*&__block {
-    &__item{
-        font-family: 'Montserrat';
-        font-style: normal;
-        text-align: right;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: getColor('theme-black');
-        &__numb {
-
-            font-weight: 900;
-            font-size: 46px;
-            line-height: 1.22;
-
-
-        @media screen  and (min-width: $tablet) {
-            font-size: 46px;
-        }
-        @media screen and (min-width: $desktop) {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 900;
-            font-size: 46px;
-            line-height: 1.22;
-            text-align: right;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: 'theme-black';
-        }
-
-        }
-        }
-    }*/
 }
 .hero .container {
   padding: 50px 0px 0px 0px;
+}
+.hero__mainFlex {
+  display: flex;
+  justify-content: space-between;
 }
 .hero__title {
   font-family: "Seymour One";
@@ -389,12 +360,23 @@ header {
   line-height: 1.27;
   letter-spacing: 0.04em;
   width: 247px;
-  /*position: absolute;
-      width: 247px;
-      height: 97px;*/
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 370px;
+    margin-left: 16px;
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+  }
 }
 .hero__title--big {
   font-family: "Seymour One";
@@ -407,53 +389,202 @@ header {
   text-transform: uppercase;
   margin-left: 20px;
 }
+@media screen and (min-width: 768px) {
+  .hero__title--big {
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title--big {
+    margin-left: 16px;
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+  }
+}
 .hero__nav {
   display: flex;
   align-items: center;
   margin-top: 32px;
-  margin-bottom: calc(186px + 67.8125vw - 217px);
   margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero__nav {
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__nav {
+    margin-top: 28px;
+    margin-left: 16px;
+    margin-bottom: 42px;
+  }
 }
 .hero__nav--first {
   margin-right: 12px;
 }
-.hero__dots {
+.hero__about {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+@media screen and (max-width: 767px) {
+  .hero__about {
+    display: none;
+  }
+}
+.hero__aboutpic {
+  height: 152px;
+  width: 152px;
+  margin-right: 32px;
+  margin-left: 32px;
+  z-index: 5;
+}
+@media screen and (min-width: 1200px) {
+  .hero__aboutpic {
+    height: 225px;
+    width: 225px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.hero__text {
+  font-size: 12px;
+  line-height: 1.4;
+  width: 140px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 14px;
+    width: 200px;
+    margin-bottom: 24px;
+  }
+}
+.hero__button {
+  width: 40px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  margin-top: auto;
+  padding: 0;
+  fill: #fcfcfc;
+}
+.hero__data {
+  margin-top: 28px;
+  margin-right: 32px;
+}
+.hero__data--qty {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+@media screen and (min-width: 1200px) {
+  .hero__data--qty {
+    font-size: 46px;
+  }
+}
+.hero__data--place {
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+}
+@media screen and (min-width: 1200px) {
+  .hero__data--place {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__data {
+    display: none;
+  }
+}
+.hero__list:first-child {
+  margin-bottom: 20px;
+}
+.hero__dots--mob {
   width: 100%;
   height: 75px;
+  margin-top: 294.5px;
 }
-@media screen and (max-width: 480px) {
-  .hero__dots {
+@media screen and (max-width: 479px) {
+  .hero__dots--mob {
     height: 15.625vw;
+    margin-top: calc(186px + 67.8125vw - 217px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__dots--mob {
+    display: none;
+  }
+}
+.hero__dots--tab {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__dots--tab {
+    display: block;
+    width: 100%;
+    height: 68px;
+    margin-top: -50px;
+  }
+}
+.hero__dots--desk {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero__dots--desk {
+    display: block;
+    width: 100%;
+    height: 384px;
+    margin-top: -325px;
   }
 }
 .hero__cream {
   position: relative;
   height: 0;
 }
-.hero__cream--inner {
+.hero__cream--mob {
   position: absolute;
   bottom: 0;
   left: 25%;
   height: 325.5px;
 }
-@media screen and (max-width: 480px) {
-  .hero__cream--inner {
+@media screen and (max-width: 479px) {
+  .hero__cream--mob {
     height: 67.8125vw;
   }
 }
-.hero__card {
-  position: absolute;
-  width: 456px;
-  height: 560px;
-  left: 652px;
-  top: 104px;
+@media screen and (min-width: 768px) {
+  .hero__cream--mob {
+    display: none;
+  }
 }
-.hero__card1 {
-  position: absolute;
-  width: 225px;
-  height: 225px;
-  left: 16px;
-  top: 374px;
+.hero__cream--tab {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__cream--tab {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+  }
+}
+.hero__cream--desk {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero__cream--desk {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+  }
 }
 
 .prod {
@@ -528,7 +659,7 @@ header {
   height: 420px;
 }
 .prod__item:nth-child(1) {
-  background: #AEC6A5;
+  background: #aec6a5;
 }
 .prod__item:nth-child(1) .prod__item--before {
   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
@@ -990,10 +1121,10 @@ header {
   }
 }
 .about-button:hover {
-  background-color: #0A8817;
+  background-color: #0a8817;
 }
 .about-button:focus {
-  background-color: #0A8817;
+  background-color: #0a8817;
   color: #fcfcfc;
 }
 .about-button:focus .about-button__icon {
@@ -1510,10 +1641,10 @@ header {
 }
 .button.button__franchise.button__franchise:hover, .button.button__franchise.button__franchise:focus {
   background-color: inherit;
-  border: 2px solid #0A8817;
+  border: 2px solid #0a8817;
 }
 .button.button__franchise.button__franchise:disabled {
-  border: 2px solid #ABABAB;
+  border: 2px solid #ababab;
 }
 
 @media screen and (max-width: 768px) {
@@ -1937,6 +2068,7 @@ header {
     height: 449px;
     padding: 32px 60px;
   }
+
 }
 .modal-howmade__title {
   font-family: "Seymour One", Arial, Helvetica, sans-serif;
@@ -1952,6 +2084,7 @@ header {
     line-height: 1.4;
     margin-bottom: 32px;
   }
+
 }
 .modal-howmade__text {
   width: 224px;
@@ -2002,6 +2135,14 @@ header {
 .modal.active {
   opacity: 1;
   visibility: visible;
+}
+
+.modal-close {
+  background-color: unset;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 /* модальне вікно */
