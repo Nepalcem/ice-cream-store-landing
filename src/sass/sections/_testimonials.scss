@@ -5,6 +5,19 @@
     (min-resolution: 2dppx) {
     background-image: url('../src/images/Bg_mobile@2x.png');
   }
+  &__picture {
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    top: -32px;
+    @media screen and (min-width: 768px) {
+      top: -145px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: -99px;
+    }
+  }
+
   &__box {
     width: 280px;
     height: 256px;
@@ -50,34 +63,32 @@
     line-height: calc(37 / 20);
     text-align: center;
     color: getColor(theme-black);
+    padding-bottom: 64px;
 
     @media screen and (min-width: 768px) {
       font-size: 16px;
       line-height: calc(30 / 16);
+      padding-bottom: 144px;
     }
   }
-
-  /*  &__picture {
-            margin-top: 32px;
-        }
-    @media screen and (min-width: 768) {
-        margin-top: 60px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-top: 80px;
-    } */
 }
 
 .foto {
   margin: 0 auto;
   border-radius: 50%;
-  margin-top: 80px;
+  @media screen and (max-width: 767px) {
+  margin-top: 48px;
   margin-bottom: 32px;
-
+  }
   @media screen and (min-width: 768px) {
-    margin-bottom: 100px;
+    margin-top: 45px;
+    margin-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 140px;
+    margin-top: 45px;
+    margin-bottom: 32px;
   }
+}
+.gallery .container {
+  padding-top: 32px;
 }
