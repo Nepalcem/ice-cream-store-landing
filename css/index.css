@@ -227,12 +227,16 @@ img {
 }
 
 header {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
   background-color: #84a278;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -244,7 +248,7 @@ header {
   margin-left: auto;
   fill: #fff;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1199.99px) {
   .menu-toggle {
     display: none;
   }
@@ -284,10 +288,10 @@ header {
   line-height: 39px;
   display: flex;
   align-items: center;
-  color: #fcfcfc;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  color: #fcfcfc;
   padding-top: 32px;
 }
 @media screen and (min-width: 768px) {
@@ -300,6 +304,12 @@ header {
 .logo {
   margin-right: auto;
   padding: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 60px;
+    height: 65px;
+  }
 }
 
 .header__logo {
@@ -326,8 +336,10 @@ header {
   margin-left: 28px;
 }
 
-.desktop-menu {
-  display: none;
+@media screen and (max-width: 1199.98px) {
+  .desktop-menu {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .desktop-menu {
