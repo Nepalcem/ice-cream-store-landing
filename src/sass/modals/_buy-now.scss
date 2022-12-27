@@ -95,21 +95,27 @@ color: #131313;
   margin-bottom: 20px;
  width: 132px;
   height: 200px;
-  border: solid 2px tomato;
+  //border: solid 2px tomato;
  }
+ .product-ice-cream{
 
-// .product-ice-cream{
-  
- // height: 136px;
-//margin-top: 63px;
-  //margin-bottom: 0px;
-//background-color: #131313;
+}
 
-//}
+.product-ice-coffe{
+  height: 136px;
+  margin-top: 63px;
+    margin-bottom: 0px;
+  background-color:yellow;
+  border-radius: 15px;
+}
 
-.modal_buy-now-product__frame{
+.product-milkshake{
 
-position: relative;
+}
+
+.modal_buy-now-productframe{
+
+position: absolute;
 margin-top: 63px;
 margin-bottom: 0px;
 height: 136px;
@@ -128,9 +134,10 @@ left: 0;
 
   .modal_buy-now-product__name{
    
-
+position: absolute;
    
-  
+  left: 15px;
+  bottom: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.15px;
@@ -140,17 +147,15 @@ left: 0;
     text-transform: uppercase;
     
     color: #131313;
-  }*/
+  }
 
-//.chek-ice__before::before{
-  //content: '';
-  //display: inline-block;
- 
-//  background-image: url(../src/images/prod/shake_mob_tab.png);
-  //position: absolute;
-  //top: -11px;
- // transform: translateX(-50%);
- //}
+  .modal_buy-now-checkbox{}
+  
+
+  & input:checked .product-milkshake{
+    background-color: #757575;
+  }
+
 
  .user-agree{
    
