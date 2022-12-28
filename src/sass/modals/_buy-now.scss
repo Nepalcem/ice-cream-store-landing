@@ -68,6 +68,7 @@
   margin-top: 40px;
 }
   .modal__title{ 
+   
     margin: 20px 91px;
     font-family: 'Seymour One';
     font-style: normal;
@@ -90,12 +91,12 @@ color: #131313;
  
 
  .modal_buy-now__item{
-  position: relative;
+  //position: relative;
   
   margin-bottom: 20px;
  width: 132px;
   height: 200px;
- // border: solid 2px tomato;
+ border: solid 2px tomato;
  }
  .product-ice-cream{
 
@@ -105,7 +106,7 @@ color: #131313;
   height: 136px;
   margin-top: 63px;
     margin-bottom: 0px;
- // background-color:yellow;
+  //background-color:yellow;
   border-radius: 15px;
 }
 
@@ -113,7 +114,7 @@ color: #131313;
 
 }
 
-.modal_buy-now-productframe{
+.modal_buy-now-product__frame{
 
 position: absolute;
 margin-top: 63px;
