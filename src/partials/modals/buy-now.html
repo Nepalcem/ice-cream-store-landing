@@ -1,90 +1,115 @@
 <!-- модальне вікно  buy-now -->
                
 <!--<div class="modal-backdrop is-hidden" data-modal>-->
-    <div class="modal_buy-now">
+  <div class="modal modal-buy-now" data-modal="1">
+    <button class="modal-close js-modal-close" type="button">
+        <svg class="modal__cross" width="14" height="14">
+            <use href="././images/icons.svg#mobile_menu_x"></use>
+        </svg>
+    </button>
 
-     
-      <div class="close-sign" data-modal-close>
+
+    
+
+        <h2 class="modal__title">Buy now</h2>
+      <ul class="modal_buy-now">
+
+        <li class="modal_buy-now__item">
+          <label class="modal_buy-now-checkbox">
+            <input type="checkbox" class="checkbox visually-hidden" />
+            <div class="modal_buy-now-product product-ice-cream">
+              <div class="modal_buy-now-product__frame">
+                <div class="modal_buy-now-product__image">
+                  <img
+                    srcset="
+                      ./images/prod/cream_mob_tab.png,
+                      ./images/prod/cream_mob_tab_@2.png
+                    "
+                    src="./images/prod/cream_mob_tab.png"
+                    alt="Ice Cream"
+                  />
+                </div>
+              </div>
+              <p class="modal_buy-now-product__name">Ice Cream</p>
+            </div>
+          </label>
+        </li>
+
+        <li class="modal_buy-now__item">
+        <label class="modal_buy-now-checkbox">
+          <input type="checkbox" class="checkbox visually-hidden" />
+          <div class="modal_buy-now-product product-ice-coffe">
+            <div class="modal_buy-now-product__frame">
+              <div class="modal_buy-now-product__image">
+                <img
+                  srcset="
+                    ./images/prod/coffee_mob_tab.png,
+                    ./images/prod/coffee_mob_tab_@2.png
+                  "
+                  src="./images/prod/coffee_mob_tab.png"
+                  alt="Ice Coffe"
+                />
+              </div>
+            </div>
+            <p class="modal_buy-now-product__name">Ice Coffe</p>
+          </div>
+        </label>
+      </li>
+
+      <li class="modal_buy-now__item">
+        <label class="modal_buy-now-checkbox">
+          <input type="checkbox" class="checkbox visually-hidden" />
+          <div class="modal_buy-now-product product-milkshake">
+            <div class="modal_buy-now-product__frame">
+              <div class="modal_buy-now-product__image">
+                <img
+                  srcset="
+                    ./images/prod/shake_mob_tab.png,
+                    ./images/prod/shake_mob_tab_@2.png
+                  "
+                  src="./images/prod/shake_mob_tab.png"
+                  alt="Ice Coffe"
+                />
+              </div>
+            </div>
+            <p class="modal_buy-now-product__name">milkshake</p>
+          </div>
+        </label>
+      </li>
+
+      </ul>
+
         
-        <svg class="close" width="20" height="20" > 
-       
-        <use href="././images/icons.svg#mobile_menu_x"></use> 
-    </svg>
 
-    </div>
-
- 
-
-
-        <div class="">
-
-          <h2 class="title-modal">Buy now</h2>
-
-
-          <ul class="buy">
-                 
-              <li class="buy-ice">
-              
-                  <a class="" href="">
-                  <img class="buy-ice__img" src="././images/prod/cream_desk.png" alt="" width="132">
-                  </a>   
-                  
-                  
-
-              <h3 class="buy-ice__title">ice cream</h3>
-                  
-               </li>
-
-
-               <li class="buy-ice">
-                      <a class="" href="">
-                    <img class="" src="././images/prod/coffee_desk.png" alt="" width="132">
-                   </a>   
-                   
-               
-               <h3 class="buy-ice__title">ice coffee</h3>
-              
-                </li>
-
-                <li class="buy-ice">
-                 
-                     <a class="" href="">
-                      <img class="" src="././images/prod/shake_desk.png" alt="" width="132">
-                     </a>   
-                     
-                 
-                 <h3 class="buy-ice__title">milkshake</h3>
-                
-                  </li>
-
-          </ul>
-
-        </div>
-    <form name="form-bay" class="modal-forma">
         
-     
+
+      </div>
+<form name="form-bay" class="modal__forma">
+      
+   
+      
+      
+      <label class="" for="user-name" >
+      <input type="text" name="user-name" id="user-name" class="modal-input" placeholder="Name">
         
-        
-        <label class="" for="user-name" >
-        <input type="text" name="user-name" id="user-name" class="modal-input" placeholder="Name">
+      </label>
+
+      <label  class="" for="user-tel" >
+      <input type="tel" name="user-tel" id="user-tel" class="modal-input" placeholder="Phone">
           
-        </label>
+      </label>
+     
+      <label class="user-coment"> 
+       <textarea name="coments" rows="7" class="user-coment-area" 
+       placeholder="Comment"></textarea>
+     </label>
+        
+      <button type="submit" class="button send" >Submit</button> 
+     
+  </form>
 
-        <label  class="" for="user-tel" >
-        <input type="tel" name="user-tel" id="user-tel" class="modal-input" placeholder="Phone">
-            
-        </label>
-       
-        <label class="user-coment"> 
-         <textarea name="coments" rows="7" class="user-coment-area" 
-         placeholder="Comment"></textarea>
-        </label>
-          
-        <button type="submit" class="button send" >Submit</button> 
-       
-    </form>
-
-
-    </div>
   </div>
- <!-- <script src="./modal.js"></script>   --> 
+</div>
+<!-- <script src="./modal.js"></script>   --> 
+
+

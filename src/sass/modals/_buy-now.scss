@@ -44,19 +44,52 @@
 
   }
 
+*/
+.modal-buy-now {
+  position: fixed;
+  width: 280px;
+  padding: 28px 0px;
+  margin: auto;
+  background-color: getColor(theme-white);
+  border: 1px solid getColor(yellow-main);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+}
+
+.modal-close {
+  background-color: unset;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
 
 
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;     
+   }
 
   /* модальне вікно modal-form*/
 
-.modal-forma{
+.modal__forma{
   display: flex;
   flex-direction: column;
   align-items: center;
   
   margin-top: 40px;
 }
-  .title-modal{ 
+  .modal__title{ 
+   
     margin: 20px 91px;
     font-family: 'Seymour One';
     font-style: normal;
@@ -68,49 +101,128 @@ align-items: center;
 text-align: center;
 
 color: #131313;
-
   }
- .buy{ display: flex;
-  flex-direction: column;
+
+  .modal_buy-now{
+    display: flex;
+    flex-direction: column;
   align-items: center;
-  
-
  }
+ 
 
-.buy-ice{
-width: 132;
-  height: 199px;
-  border-bottom: 2px solid #96AF8C;
-  border-left: 2px solid #96AF8C;
-  border-right:2px solid #96AF8C ;
-filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-border-radius: 15px;
-margin-bottom: 20px;
-}
-//.buy-ice__img{
+ .modal_buy-now__item{
+  position: relative;
   
-//}
+  margin-bottom: 20px;
+ width: 132px;
+  height: 200px;
+ border: solid 2px tomato;
+ }
+ //.product-ice-cream{}
 
-.buy-ice__border{
-height: 136p;
-  border-bottom: 2px solid #96AF8C;
-  border-left: 2px solid #96AF8C;
-  border-right:2px solid #96AF8C ;
+.product-ice-coffe{
+  height: 136px;
+  margin-top: 63px;
+    margin-bottom: 0px;
+  background-color:yellow;
+  border-radius: 15px;
+}
+
+//.product-milkshake{}
+
+.modal_buy-now-product__frame{
+
+position: absolute;
+margin-top: 63px;
+margin-bottom: 0px;
+height: 136px;
+border: 2px solid #96AF8C;
 filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 border-radius: 15px;
 
 }
 
-  .buy-ice__title{
-    font-size: 16px;
-line-height: 1.25;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
+.modal_buy-now-product__image{
+position: absolute;
+top:-50%;
+left: 0;
 
-color: #131313;
-margin-top: 20px;
+}
+
+  .modal_buy-now-product__name{
+   
+position: absolute;
+   
+  left: 15px;
+  bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.15px;
+    
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #131313;
   }
+
+ // .modal_buy-now-checkbox{}
+  
+
+  & input:checked .product-milkshake{
+    background-color: #757575;
+  }
+
+ .user-agree{
+   
+   position: absolute;
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.ice-title{
+  position: absolute;
+  top: 150px ;
+  left: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  
+  color: #131313;
+  margin-top: 20px;
+}
+/*
+
+.user-agree::before {
+    content: "";
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+
+.check-input{
+    margin: 10px;
+
+& input:checked + .user-agree::before{
+    background-color: #2196F3;
+    border: none;
+    background-image: url(/imges/Galka\(1\).svg);
+     background-repeat: no-repeat;
+    background-position: center;
+} 
+}
+
+
+
+
+
 
 
 /* модальна форма modal-form*/
@@ -136,3 +248,5 @@ margin-top: 20px;
   margin-bottom: 20px;
 }
   
+
+
