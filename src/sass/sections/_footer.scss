@@ -1,24 +1,28 @@
 .footer {
   background: #84a178;
   width: 100%;
-  padding-top: 1095px;
+  padding-top: 60px;
+  // padding-top: 1095px;
   @media screen and (min-width: 480px) {
     display: block;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding-top: 360px;
+    padding-top: 40px;
+    // padding-top: 360px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: column;
-    padding-top: 636px;
+    padding-top: 120px;
+    // padding-top: 636px;
+
   }
 }
 
-.footer .container {
-  padding: 20px;
-}
+// .footer .container {
+//   padding: 20px;
+// }
 
 .footer__container {
   margin: 0px;
@@ -204,6 +208,7 @@
 }
 
 .footer__compani {
+  // background-color: getColor(green-main);
   border-top: 1px solid #e1e1e1;
   display: flex;
   flex-direction: column;

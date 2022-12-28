@@ -1,28 +1,27 @@
-// .location .container{
-//     position: relative;
-//     top: -353px;
+.background-block
+{background-color: getColor(green-main);}
 
+.location .container{
+    position: relative;
+    top: -353px;
 
-// @media screen and (min-width: $tablet) {
-// top: -299px;
-// }
-// @media screen and (min-width: $desktop) {
-//     top: -128px;
-// }
-// }
+@media screen and (min-width: $tablet) {
+    top: -299px;}
+@media screen and (min-width: $desktop) {
+    top: -128px;}}
 
-.location{
+.location{margin-bottom: -353px;
+    // top: -353px;
+    // position: relative;
+    // top: -353px;
     // background-color: getColor(green-main);
-    /* text-align: center; */
-    background-color: transparent;
-    padding: 0;
-//     margin-bottom: 60px;
-// @media screen and (min-width: $tablet) {
-//     margin-bottom: 40px;
-// }
-// @media screen and (min-width: $desktop) {
-//     margin-bottom: 120px;
-// }
+    // text-align: center; 
+    // background-color: transparent;
+    // padding: 0;
+@media screen and (min-width: $tablet) {
+    margin-bottom: -299px;}
+@media screen and (min-width: $desktop) {
+    margin-bottom: -128px;}
 
 &__block{
     margin: 0 auto;
@@ -31,8 +30,7 @@
 @media screen and (min-width: $tablet) {
     display: flex;
     gap: 16px;
-    justify-content: center;
-}
+    justify-content: center;}
 
 @media screen and (min-width: $desktop) {
     display: flex;
@@ -63,7 +61,6 @@
     padding-right: 24px;
     padding-left: 24px;
     margin-bottom: 40px;
-
 }
 
 @media screen and (min-width: $desktop) 
@@ -257,4 +254,3 @@
 .button__our-location
     {margin-right: 16px;}
 }}
-
