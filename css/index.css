@@ -1303,6 +1303,7 @@ header {
 }
 
 .gallery {
+  padding-bottom: 393px;
   background-image: url("../src/images/Bg_mobile.png");
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1312,6 +1313,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .gallery {
+    padding-bottom: 379px;
     background-image: url("../src/images/Bg_tablet.png");
   }
 }
@@ -1322,6 +1324,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .gallery {
+    padding-bottom: 228px;
     background-image: url("../src/images/Bg_desktop.png");
   }
 }
