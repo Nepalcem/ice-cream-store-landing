@@ -1,0 +1,22 @@
+.to-top {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  transform: translateX(0);
+  rotate: (270deg);
+  right: 24px;
+  position: absolute;
+  background-color: getColor(green-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  & svg {
+    width: 32px;
+  }
+  &:hover {
+    background: getColor(yellow-main);
+  }
+}
