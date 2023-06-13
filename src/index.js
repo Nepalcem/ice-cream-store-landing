@@ -82,3 +82,23 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 }); // end ready
+
+/////////To Top button //////////////
+const toTop = document.getElementById('toTop');
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 100) {
+    toTop.style.display = 'flex';
+    toTop.classList.add('show');
+  } else {
+    toTop.classList.remove('show');
+  }
+});
+
+toTop.addEventListener('click', function (event) {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
