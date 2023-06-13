@@ -102,3 +102,23 @@ toTop.addEventListener('click', function (event) {
     behavior: 'smooth',
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Smooth scrolling when menu items are clicked
+  const menuLinks = document.querySelectorAll(".desktop-menu_link");
+
+  menuLinks.forEach(function(link) {
+    link.addEventListener("click", function(e) {
+      if (this.hash !== "") {
+        e.preventDefault();
+
+        var hash = this.hash;
+        var targetElement = document.querySelector(hash);
+
+        // Scroll smoothly to the target anchor
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+});
