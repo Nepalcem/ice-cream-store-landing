@@ -32,28 +32,19 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
 
-  /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
-    /* Назначаем каждой кнопке обработчик клика */
     item.addEventListener('click', function (e) {
-      /* Предотвращаем стандартное действие элемента. Так как кнопку разные
-            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
-            Нужно подстраховаться. */
       e.preventDefault();
 
-      /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
-            и будем искать модальное окно с таким же атрибутом. */
       var modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(
           '.modal[data-modal="' + modalId + '"]'
         );
 
-      /* После того как нашли нужное модальное окно, добавим классы
-            подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
-    }); // end click
-  }); // end foreach
+    });
+  });
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
@@ -81,17 +72,26 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
   });
-}); // end ready
+});
 
-/////////To Top button //////////////
+/////////To Top button & stickup menu //////////////
 const toTop = document.getElementById('toTop');
+const header = document.querySelector('header');
 
 window.addEventListener('scroll', function () {
-  if (window.scrollY > 100) {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > 100) {
     toTop.style.display = 'flex';
     toTop.classList.add('show');
   } else {
     toTop.classList.remove('show');
+  }
+
+  if (scrollTop > 0 && header) {
+    header.classList.add('sticky');
+  } else if (header) {
+    header.classList.remove('sticky');
   }
 });
 
@@ -103,22 +103,32 @@ toTop.addEventListener('click', function (event) {
   });
 });
 
+/// menu smooth scroll
+document.addEventListener('DOMContentLoaded', function () {
+  const menuLinks = document.querySelectorAll('.desktop-menu_link');
+  const logoLink = document.querySelector('.logo');
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Smooth scrolling when menu items are clicked
-  const menuLinks = document.querySelectorAll(".desktop-menu_link");
+  function smoothScroll(target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
 
-  menuLinks.forEach(function(link) {
-    link.addEventListener("click", function(e) {
-      if (this.hash !== "") {
-        e.preventDefault();
+  function handleClick(e) {
+    if (this.hash !== '') {
+      e.preventDefault();
 
-        var hash = this.hash;
-        var targetElement = document.querySelector(hash);
+      const hash = this.hash;
+      const targetElement = document.querySelector(hash);
 
-        // Scroll smoothly to the target anchor
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+      smoothScroll(targetElement);
+    }
+  }
+
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', handleClick);
+  });
+
+  logoLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    smoothScroll(document.documentElement);
   });
 });

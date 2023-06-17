@@ -18,9 +18,13 @@ header {
   margin-left: auto;
   fill: #fff;
 
-  @media screen and (min-width: 1199.99px) {
+  @media screen and (min-width: $tablet ) {
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 1199px) {
     display: none;
   }
+
 }
 
 .mobile-menu_link:hover,
@@ -101,10 +105,10 @@ header {
   @media screen and (max-width: 1199.98px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
-    margin-right: auto;
-    margin-top: 20px;
+    align-items: center;
+    margin-left: 100px;
   }
 }
 .desktop-menu_link:hover,
@@ -116,9 +120,16 @@ header {
   margin-bottom: 114px;
 }
 
-.button.button__buy-now--none{
- 
+.button.button__buy-now--none {
   @media screen and (max-width: 767.167px) {
     display: none;
   }
+}
+#header .container {
+  justify-content: space-between;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }

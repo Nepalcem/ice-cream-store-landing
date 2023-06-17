@@ -1,5 +1,6 @@
-  <div class="container header__logo">
-    <img class="logo" srcset="
+<section id="header">
+  <div class="container header__logo sticky">
+    <a href="#"> <img class="logo" srcset="
         images/header/logo_40.png   40w,
         images/header/logo_48.png   48w,
         images/header/logo_60.png   60w,
@@ -7,7 +8,7 @@
         images/header/logo_96.png   96w,
         images/header/logo_120.png 120w
       " sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 40px, 100vw"
-      src="./images/header/logo_40.png" alt="logo" width="40" />
+        src="./images/header/logo_40.png" alt="logo" width="40" /></a>
     <ul class="desktop-menu">
       <li class="desktop-menu_item">
         <a href="#hero" class="desktop-menu_link">Home</a>
@@ -55,7 +56,7 @@
         " sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 40px, 100vw"
         src="./images/header/logo_40.png" alt="logo__menu" width="40" />
       <li class="mobile-menu_item">
-        <a href="/" class="mobile-menu_link">Home</a>
+        <a href="#hero" class="mobile-menu_link">Home</a>
       </li>
       <li class="mobile-menu_item">
         <a href="#about" class="mobile-menu_link">How it’s made?</a>
@@ -75,8 +76,9 @@
       </svg>
     </button>
   </div>
+</section>
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>

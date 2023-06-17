@@ -244,7 +244,12 @@ header {
   margin-left: auto;
   fill: #fff;
 }
-@media screen and (min-width: 1199.99px) {
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1199px) {
   .menu-toggle {
     display: none;
   }
@@ -344,8 +349,8 @@ header {
 @media screen and (min-width: 1200px) {
   .desktop-menu {
     display: flex;
-    margin-right: auto;
-    margin-top: 20px;
+    align-items: center;
+    margin-left: 100px;
   }
 }
 
@@ -363,6 +368,16 @@ header {
   .button.button__buy-now--none {
     display: none;
   }
+}
+
+#header .container {
+  justify-content: space-between;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .hero {
