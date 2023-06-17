@@ -18,13 +18,12 @@ header {
   margin-left: auto;
   fill: #fff;
 
-  @media screen and (min-width: $tablet ) {
+  @media screen and (min-width: $tablet) {
     margin-right: 32px;
   }
   @media screen and (min-width: 1199px) {
     display: none;
   }
-
 }
 
 .mobile-menu_link:hover,
@@ -108,7 +107,7 @@ header {
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 110px;
   }
 }
 .desktop-menu_link:hover,
@@ -127,6 +126,7 @@ header {
 }
 #header .container {
   justify-content: space-between;
+  align-items: center;
 }
 .sticky {
   position: sticky;
