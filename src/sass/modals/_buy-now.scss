@@ -50,14 +50,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .modal_buy-now__item {
-    position: relative;
 
-    margin-bottom: 20px;
-    width: 132px;
-    height: 200px;
-    //border: solid 2px tomato;
-  }
   //.product-ice-cream{}
 
   .product-ice-coffe {
@@ -161,7 +154,7 @@
   height: 132px;
   width: 132px;
   position: absolute;
-  top:7px;
+  top: 7px;
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
@@ -169,4 +162,65 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.modal_buy-now__item:nth-child(2) .modal_buy-now-product__image::after {
+  background: linear-gradient(0deg, #f8d24eb3, #f8d24eb3), #d9d9d9;
+  box-shadow: 0 5.40397px 20.2649px #99721740;
+}
+
+.modal_buy-now__item:nth-child(3) .modal_buy-now-product__image::after {
+  background: linear-gradient(0deg, #d5753fb3, #d5753fb3), #d9d9d9;
+  box-shadow: 0 5.41333px 20.3px #00000040;
+}
+
+.modal_buy-now-product__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: getColor(theme-black);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 20px 16px;
+}
+
+.modal_buy-now-product__frame::after {
+  content: '';
+  width: 132px;
+  height: 136px;
+  border: 2px solid #96af8c;
+  border-radius: 15px;
+  display: block;
+  position: absolute;
+  transform: translateY(-100%) translateX(34%);
+  z-index: -1;
+}
+.modal_buy-now__item:nth-child(2) .modal_buy-now-product__frame::after {
+  border: 2px solid #efd478;
+}
+.modal_buy-now__item:nth-child(3) .modal_buy-now-product__frame::after {
+  border: 2px solid #d6936d;
+}
+
+.modal_buy-now {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-forma .user-coment-area {
+  height: 42px;
+}
+
+.modal-buynow__title {
+  font-family: 'Seymour One', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: getColor(theme-black);
+  margin-bottom: 10px;
+  text-align: center;
 }

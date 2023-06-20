@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
           '.modal[data-modal="' + modalId + '"]'
         );
 
+      const mobileMenu = document.querySelector('.js-menu-container');
+      mobileMenu.classList.remove('is-open');
+      bodyScrollLock.enableBodyScroll(document.body);
+
       modalElem.classList.add('active');
       overlay.classList.add('active');
     });
