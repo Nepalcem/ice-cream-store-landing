@@ -107,7 +107,7 @@
     color: getColor(theme-black);
   }
   &__ingridients {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
   }
   &__ingridients-title {
     font-weight: 500;
@@ -151,7 +151,7 @@
     color: getColor(theme-black);
   }
   &__list-item:not(:last-child) {
-    margin-bottom: 11px;
+    margin-bottom: 4px;
   }
 
   &__content .modal-input,

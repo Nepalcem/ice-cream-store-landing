@@ -103,7 +103,12 @@ img {
 }
 
 /* Стили для активных классов подложки и окна */
-.modal.active,
+.modal.active {
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+}
+
 .overlay.active {
   opacity: 1;
   visibility: visible;
@@ -2158,6 +2163,32 @@ header {
   margin-bottom: 20px;
 }
 
+.modal-buynow__content {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.modal_buy-now-product__image img {
+  display: inline-block;
+}
+
+.modal_buy-now-product__image {
+  position: relative;
+}
+
+.modal_buy-now-product__image::after {
+  content: "";
+  z-index: -1;
+  transform: translateX(-100%);
+  border-radius: 50%;
+  height: 132px;
+  width: 132px;
+  position: absolute;
+  top: 7px;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
 .modal-howmade {
   position: fixed;
   width: 280px;
@@ -2331,7 +2362,7 @@ header {
   color: #131313;
 }
 .modal-icecream__ingridients {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 .modal-icecream__ingridients-title {
   font-weight: 500;
@@ -2373,7 +2404,7 @@ header {
   color: #131313;
 }
 .modal-icecream__list-item:not(:last-child) {
-  margin-bottom: 11px;
+  margin-bottom: 4px;
 }
 @media screen and (min-width: 768px) {
   .modal-icecream__content .modal-input, .modal-icecream__content .user-coment-area {

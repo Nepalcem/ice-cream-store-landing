@@ -126,7 +126,12 @@ $desktop: 1200px;
 
 /* Стили для активных классов подложки и окна */
 
-.modal.active,
+.modal.active {
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+}
+
 .overlay.active {
   opacity: 1;
   visibility: visible;
