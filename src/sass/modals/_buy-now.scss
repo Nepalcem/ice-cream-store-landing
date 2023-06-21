@@ -136,6 +136,24 @@
 .modal-buynow__content {
   padding-left: 28px;
   padding-right: 28px;
+  & .modal-input {
+    width: 100%;
+    height: 42px;
+    background: #f8d24e1a;
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    outline: #f8d24e;
+    padding: 11px;
+  }
+  & .user-coment-area {
+    width: 100%;
+    height: 42px;
+    background: #f8d24e1a;
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    outline: #f8d24e;
+    padding: 11px;
+  }
 }
 
 .modal_buy-now-product__image img {
@@ -223,4 +241,20 @@
   color: getColor(theme-black);
   margin-bottom: 10px;
   text-align: center;
+}
+
+
+.modal_buy-now-checkbox:hover {
+  cursor: pointer;
+}
+
+.modal_buy-now__item:nth-child(1) .modal_buy-now-checkbox input[type="checkbox"]:checked + .modal_buy-now-product .modal_buy-now-product__frame::after {
+  background-color: #96af8c;
+}
+
+.modal_buy-now__item:nth-child(2) .modal_buy-now-checkbox input[type="checkbox"]:checked + .modal_buy-now-product .modal_buy-now-product__frame::after {
+  background-color: #efd478;
+}
+.modal_buy-now__item:nth-child(3) .modal_buy-now-checkbox input[type="checkbox"]:checked + .modal_buy-now-product .modal_buy-now-product__frame::after {
+  background-color: #d6936d;
 }
