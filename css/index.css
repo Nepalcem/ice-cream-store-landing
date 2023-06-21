@@ -2161,6 +2161,11 @@ header {
   padding-left: 28px;
   padding-right: 28px;
 }
+@media screen and (min-width: 768px) {
+  .modal-buynow__content {
+    padding: 0;
+  }
+}
 .modal-buynow__content .modal-input {
   width: 100%;
   height: 42px;
@@ -2235,6 +2240,11 @@ header {
   transform: translateY(-100%) translateX(34%);
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .modal_buy-now-product__frame::after {
+    transform: translateX(0) translateY(-100%);
+  }
+}
 
 .modal_buy-now__item:nth-child(2) .modal_buy-now-product__frame::after {
   border: 2px solid #efd478;
@@ -2243,10 +2253,27 @@ header {
 .modal_buy-now__item:nth-child(3) .modal_buy-now-product__frame::after {
   border: 2px solid #d6936d;
 }
+@media screen and (min-width: 768px) {
+  .modal_buy-now__item:nth-child(3) .modal_buy-now-product__frame::after {
+    transform: translateX(2%) translateY(-100%);
+  }
+}
 
 .modal_buy-now {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .modal_buy-now {
+    flex-direction: row;
+  }
+}
+
+.modal-forma {
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
